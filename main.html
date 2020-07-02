@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Y_591</title>
+    <script src="/eel.js"></script>
+    <!--link rel="stylesheet" href="http://drive.google.com/uc?id=171-LzESflImQAC5nIVErtdxrr8UGWXr4"-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class=t1>
+            <span class=line>遊戲：
+            <!--<select value='text' id="college-list" onchange="changeCollege(this.selectedIndex)"></select></p>
+            -->
+            <select id="game-list" width="100" style="width: 100px"></select></span>
+            <span class=line>伺服器：
+            <select id="server-list" width="100" style="width: 100px"></select></span>
+            <span class=line>商品類型：
+            <select id="type-list" width="100" style="width: 100px"></select></span>
+            <span class=line>道具名稱：
+            <input type="text" id="item"></input>
+            <button type="button" onclick="loger()">搜尋</button></span>
+            <iframe class=frame src="https://www.8591.com.tw/mallList-list.html?&id=859" name="iframe_a" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+        <div class=t2>
+            <span class=line>排序：
+            <select id="sort-list" width="100" style="width: 100px"></select></span>
+            <span class=line>價格：
+            <input type="text" class="rg" id="rg1"></input></span>
+            <span class=line> ~ 
+            <input type="text" class="rg" id="rg2"></input></span>
+            <span class=line>賣家編號：
+            <input type="text" class="rg" id="uid"></input>
+            <input type="checkbox" id="c1" value="1" class="check1">
+            <label for="c1"><span class="check1"></span>已完成商品</label>
+            <input type="checkbox" id="c2" value="2" class="check2" onclick="au()">
+            <label for="c2"><span class="check2"></span>自動更新</label>
+        </div>
+    </form>
+    <div class="bg">
+        <pre class="list"> 
+            <ul id="items-list" class="num">
+                
+            </ul>
+        </pre>
+    </div>
+    <!--script src="http://drive.google.com/uc?id=10A_F5_eYbTYS9BvtcOrSwdfLBR4RTgRe"></script-->
+    <script src=func.js></script>
+<!--    <h1>Test_Hello</h1>
+-->
+</body>
+</html>
